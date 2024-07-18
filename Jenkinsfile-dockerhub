@@ -6,12 +6,12 @@ pipeline {
      }
     environment {
     DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
-    APP_NAME = "ooghenekaro/nodejs-push"
+    APP_NAME = "sbongokuhle/nodejs-push"
     }
     stages { 
         stage('SCM Checkout') {
             steps{
-           git branch: 'main', url: 'https://github.com/ooghenekaro/nodejs-webapp.git'
+           git branch: 'main', url: 'https://github.com/Sbusiso17/nodejs-webapp.git'
             }
         }
         
